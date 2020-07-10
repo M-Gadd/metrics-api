@@ -1,6 +1,6 @@
 import { useSubmit } from "../hooks/useMetrics";
 import { Row, Col } from "reactstrap";
-import React, { useEffect } from "react";
+import React from "react";
 
 export interface SumMetricsProps {
   metric: string;

@@ -24,8 +24,6 @@ const sumMetrics = async (req, res) => {
   redisClient.smembers(key, (err, values) => {
     let sum = 0;
     values.forEach((one) => {
-      console.log(key, ":", one);
-
       // calculating the difference in time from now with the data posted previously
       let TimeDifference = Math.round(
         Math.abs(Date.now() - Number(JSON.parse(one).timestamp)) / 36e5,

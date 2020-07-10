@@ -36,7 +36,6 @@ const Metrics: React.SFC<MetricsProps> = () => {
             }}
           />
         </Col>
-
         <Col xs={3}>
           <Input
             type="text"
