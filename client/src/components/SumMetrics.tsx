@@ -13,7 +13,9 @@ const SumMetrics: React.SFC<SumMetricsProps> = ({ metric }) => {
     return (
       <Row>
         <Col>
-          <h3>Calculating your sum</h3>
+          <h3 className="mt-4" style={{ color: "white" }}>
+            Calculating your sum
+          </h3>
         </Col>
       </Row>
     );
