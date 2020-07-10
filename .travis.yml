@@ -1,0 +1,12 @@
+sudo: require
+language: node_js
+services:
+  - docker
+before-install:
+  - chmod +x ./deploy.sh
+
+script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then ./deploy.sh; fi'
+
+notifications:
+  email: false
